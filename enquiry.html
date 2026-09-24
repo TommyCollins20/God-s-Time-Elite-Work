@@ -318,27 +318,251 @@
 
                         <!-- OTHER SERVICE -->
 
-                        <div
-                            id="otherServiceContainer"
-                            class="form-group hidden"
-                        >
+                       <!-- OTHER SERVICES -->
 
-                            <label
-                                for="otherService"
-                                class="form-label"
-                            >
-                                What Service Do You Need?
-                            </label>
+<div
+    id="otherServiceContainer"
+    class="other-services-container hidden"
+>
 
-                            <input
-                                type="text"
-                                id="otherService"
-                                name="otherService"
-                                class="enquiry-input"
-                                placeholder="Enter the service you need"
-                            >
+    <div class="form-group">
 
-                        </div>
+        <label class="form-label">
+            More Services
+        </label>
+
+        <p class="service-selection-text">
+            Select the service you need.
+        </p>
+
+    </div>
+
+
+    <!-- SERVICE CARDS -->
+
+    <div class="service-selection-grid">
+
+
+        <!-- ALUMINIUM WINDOWS -->
+
+        <button
+            type="button"
+            class="service-selection-card"
+            data-service="Aluminium Windows"
+        >
+
+            <img
+                src="images/windows.jpg"
+                alt="Aluminium Windows"
+            >
+
+            <span>
+                Aluminium Windows
+            </span>
+
+        </button>
+
+
+        <!-- ALUMINIUM DOORS -->
+
+        <button
+            type="button"
+            class="service-selection-card"
+            data-service="Aluminium Doors"
+        >
+
+            <img
+                src="images/doors.jpg"
+                alt="Aluminium Doors"
+            >
+
+            <span>
+                Aluminium Doors
+            </span>
+
+        </button>
+
+
+        <!-- SLIDING DOORS & WINDOWS -->
+
+        <button
+            type="button"
+            class="service-selection-card"
+            data-service="Sliding Doors & Windows"
+        >
+
+            <img
+                src="images/sliding-door.jpg"
+                alt="Sliding Doors and Windows"
+            >
+
+            <span>
+                Sliding Doors & Windows
+            </span>
+
+        </button>
+
+
+        <!-- OFFICE PARTITIONS -->
+
+        <button
+            type="button"
+            class="service-selection-card"
+            data-service="Office Partitions"
+        >
+
+            <img
+                src="images/office-partition.jpg"
+                alt="Office Partitions"
+            >
+
+            <span>
+                Office Partitions
+            </span>
+
+        </button>
+
+
+        <!-- WASHING & CLEANING -->
+
+        <button
+            type="button"
+            class="service-selection-card"
+            data-service="Washing & Cleaning"
+        >
+
+            <img
+                src="images/washing-cleaning.jpg"
+                alt="Washing and Cleaning"
+            >
+
+            <span>
+                Washing & Cleaning
+            </span>
+
+        </button>
+
+
+        <!-- WELDING & FABRICATION -->
+
+        <button
+            type="button"
+            class="service-selection-card"
+            data-service="Welding & Fabrication"
+        >
+
+            <img
+                src="images/welding.jpg"
+                alt="Welding and Fabrication"
+            >
+
+            <span>
+                Welding & Fabrication
+            </span>
+
+        </button>
+
+
+        <!-- GATES & RAILINGS -->
+
+        <button
+            type="button"
+            class="service-selection-card"
+            data-service="Gates & Railings"
+        >
+
+            <img
+                src="images/gates.jpg"
+                alt="Gates and Railings"
+            >
+
+            <span>
+                Gates & Railings
+            </span>
+
+        </button>
+
+
+        <!-- REPAIRS & FIXES -->
+
+        <button
+            type="button"
+            class="service-selection-card"
+            data-service="Repairs & Fixes"
+        >
+
+            <img
+                src="images/repairs.jpg"
+                alt="Repairs and Fixes"
+            >
+
+            <span>
+                Repairs & Fixes
+            </span>
+
+        </button>
+
+    </div>
+
+
+    <!-- SELECTED SERVICE -->
+
+    <div
+        id="selectedServiceContainer"
+        class="selected-service-container hidden"
+    >
+
+        <p>
+            Selected Service:
+            <strong id="selectedService">
+            </strong>
+        </p>
+
+    </div>
+
+
+    <!-- CUSTOM SERVICE -->
+
+    <div class="custom-service-option">
+
+        <p>
+            Can't find what you need?
+        </p>
+
+        <button
+            type="button"
+            id="customServiceButton"
+            class="outline-btn"
+        >
+            Type Your Service
+        </button>
+
+    </div>
+
+
+    <div
+        id="customServiceContainer"
+        class="form-group hidden"
+    >
+
+        <label
+            for="otherService"
+            class="form-label"
+        >
+            What Service Do You Need?
+        </label>
+
+        <input
+            type="text"
+            id="otherService"
+            name="otherService"
+            class="enquiry-input"
+            placeholder="Enter the service you need"
+        >
+
+    </div>
+
+</div>
 
 
                         <!-- BUILDING LOCATION -->
