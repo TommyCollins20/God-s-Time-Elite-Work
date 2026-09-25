@@ -224,6 +224,7 @@ textarea {
 .gold-btn {
     background: var(--gold);
     color: #050505;
+    font-weight: 1000;
 }
 
 .gold-btn:hover {
@@ -510,10 +511,13 @@ textarea {
 }
 
 .cta-container {
-    width: min(800px, 92%);
+    max-width: 600px;
     margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
 .cta-container h2 {
     margin-bottom: 15px;
 }
@@ -1166,4 +1170,104 @@ p {
         width: 100%;
     }
 
+}
+
+/* ================= GALLERY FILTERS ================= */
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 35px 0 45px;
+}
+
+.filter-buttons button {
+    padding: 11px 22px;
+    background: transparent;
+    color: #bdbdbd;
+    border: 1px solid #333;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.filter-buttons button:hover,
+.filter-buttons button.active {
+    background: #d4a017;
+    border-color: #d4a017;
+    color: #050505;
+}
+
+@media (max-width: 600px) {
+
+    .filter-buttons {
+        gap: 8px;
+    }
+
+    .filter-buttons button {
+        padding: 10px 16px;
+    }
+
+}
+
+/* ================= GALLERY CUSTOM CTA ================= */
+
+.gallery-custom-cta {
+    max-width: 800px;
+    margin: 70px auto 0;
+    padding: 50px 40px;
+    text-align: center;
+    background: #0d0d0d;
+    border: 1px solid #242424;
+}
+
+.gallery-custom-cta h2 {
+    margin: 10px 0 18px;
+    color: #fff;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.gallery-custom-cta p:not(.section-label) {
+    max-width: 650px;
+    margin: 0 auto 28px;
+    color: #bdbdbd;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.gallery-custom-cta .gold-btn {
+    display: inline-block;
+}
+
+@media (max-width: 760px) {
+
+    .gallery-custom-cta {
+        padding: 35px 22px;
+        margin-top: 50px;
+    }
+
+    .gallery-custom-cta h2 {
+        font-size: 28px;
+    }
+
+}
+
+.cta-section {
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.cta-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    word-wrap: break-word;
 }
