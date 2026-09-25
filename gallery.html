@@ -6,15 +6,13 @@
 
     <title>Gallery | God's Time Elite Aluminium Works</title>
 
-    <meta
-        name="description"
-        content="View aluminium, sliding door, casement and metal work projects from God's Time Elite Aluminium Works."
-    >
+    <meta name="description"
+        content="View completed aluminium, doors, windows, gates and metal work projects by God's Time Elite Aluminium Works.">
 
-    <!-- Tailwind CSS -->
+    <meta name="author" content="God's Time Elite Aluminium Works">
+
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="index.css">
 </head>
 
@@ -23,46 +21,24 @@
     <!-- ================= NAVBAR ================= -->
 
     <header class="navbar">
-
         <div class="nav-container">
 
             <a href="index.html" class="logo">
-
                 <span class="logo-mark">GT</span>
-
                 <span class="logo-text">
-                    God's Time <strong>Elite</strong>
+                    God's Time <span>Elite</span> Aluminium Works
                 </span>
-
             </a>
 
-
             <nav class="desktop-nav">
-
                 <a href="index.html">Home</a>
-
                 <a href="index.html#about">About</a>
-
                 <a href="services.html">Services</a>
-
-                <a href="gallery.html" class="active-link">
-                    Gallery
-                </a>
-
-                <a href="index.html#testimonials">
-                    Testimonials
-                </a>
-
-                <a href="enquiry.html">
-                    Project Enquiry
-                </a>
-
-                <a href="contact.html">
-                    Contact
-                </a>
-
+                <a href="gallery.html" class="active">Gallery</a>
+                <a href="index.html#testimonials">Testimonials</a>
+                <a href="enquiry.html">Service Enquiry</a>
+                <a href="contact.html">Contact</a>
             </nav>
-
 
             <button
                 class="menu-button"
@@ -71,317 +47,391 @@
                 aria-label="Open menu"
                 aria-expanded="false"
             >
-                ☰
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
 
         </div>
-
 
         <!-- MOBILE MENU -->
 
         <div class="mobile-menu" id="mobileMenu">
 
-            <a href="index.html" class="mobile-link">
-                Home
-            </a>
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="index.html#about" class="mobile-link">About</a>
+            <a href="services.html" class="mobile-link">Services</a>
+            <a href="gallery.html" class="mobile-link">Gallery</a>
+            <a href="index.html#testimonials" class="mobile-link">Testimonials</a>
+            <a href="enquiry.html" class="mobile-link">Service Enquiry</a>
+            <a href="contact.html" class="mobile-link">Contact</a>
 
-            <a href="index.html#about" class="mobile-link">
-                About
-            </a>
+        </div>
+    </header>
 
-            <a href="services.html" class="mobile-link">
-                Services
-            </a>
 
-            <a href="gallery.html" class="mobile-link">
-                Gallery
-            </a>
+    <!-- ================= HERO ================= -->
 
-            <a href="index.html#testimonials" class="mobile-link">
-                Testimonials
-            </a>
+    <section class="hero">
 
-            <a href="enquiry.html" class="mobile-link">
-                Project Enquiry
-            </a>
+        <div class="hero-container">
 
-            <a href="contact.html" class="mobile-link">
-                Contact
+            <div class="hero-content">
+
+                <p class="hero-label">OUR WORK</p>
+
+                <h1>
+                    Quality Work.
+                    <span>See It Yourself.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Explore some of our completed aluminium fabrication,
+                    installation and metal work projects.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="enquiry.html" class="gold-btn">
+                        Request Our Services
+                    </a>
+
+                    <a href="index.html" class="outline-btn">
+                        Back Home
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-image-container">
+
+                <img
+                    src="images/hero.jpg"
+                    alt="God's Time Elite Aluminium Works project"
+                    class="hero-image"
+                >
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GALLERY ================= -->
+
+    <section class="section projects-section">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+
+                <p class="section-label">OUR PROJECTS</p>
+
+                <h2>Our Completed Work</h2>
+
+                <p>
+                    A selection of aluminium, doors, windows and metal work
+                    completed for our clients.
+                </p>
+
+            </div>
+
+
+            <!-- ================= FILTER BUTTONS ================= -->
+
+            <div class="filter-buttons">
+
+                <button
+                    type="button"
+                    class="active"
+                    data-filter="all"
+                >
+                    All
+                </button>
+
+                <button
+                    type="button"
+                    data-filter="windows"
+                >
+                    Windows
+                </button>
+
+                <button
+                    type="button"
+                    data-filter="doors"
+                >
+                    Doors
+                </button>
+
+                <button
+                    type="button"
+                    data-filter="gates"
+                >
+                    Gates
+                </button>
+
+            </div>
+
+
+            <!-- ================= PROJECTS ================= -->
+
+            <div class="projects-grid">
+
+
+                <!-- PROJECT 1 -->
+
+                <article
+                    class="project-card"
+                    data-category="doors"
+                >
+
+                    <img
+                        src="images/sliding-door.jpg"
+                        alt="Aluminium sliding door"
+                    >
+
+                    <div class="project-content">
+
+                        <h3>Sliding Door</h3>
+
+                        <p>
+                            Aluminium sliding door installation.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 2 -->
+
+                <article
+                    class="project-card"
+                    data-category="windows"
+                >
+
+                    <img
+                        src="images/arc.jpg"
+                        alt="Aluminium casement window with arc"
+                    >
+
+                    <div class="project-content">
+
+                        <h3>Casement With Arc</h3>
+
+                        <p>
+                            Aluminium casement window installation.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 3 -->
+
+                <article
+                    class="project-card"
+                    data-category="windows"
+                >
+
+                    <img
+                        src="images/window.jpg"
+                        alt="Aluminium sliding window with corner fixed angle"
+                    >
+
+                    <div class="project-content">
+
+                        <h3>Sliding With Corner Fixed Angle</h3>
+
+                        <p>
+                            Aluminium sliding window installation.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 4 -->
+
+                <article
+                    class="project-card"
+                    data-category="windows"
+                >
+
+                    <img
+                        src="images/project-4.jpg"
+                        alt="Aluminium project"
+                    >
+
+                    <div class="project-content">
+
+                        <h3>Aluminium Project</h3>
+
+                        <p>
+                            Aluminium fabrication and installation.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 5 -->
+
+                <article
+                    class="project-card"
+                    data-category="doors"
+                >
+
+                    <img
+                        src="images/project-5.jpg"
+                        alt="Aluminium door"
+                    >
+
+                    <div class="project-content">
+
+                        <h3>Aluminium Door</h3>
+
+                        <p>
+                            Aluminium door fabrication and installation.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 6 -->
+
+                <article
+                    class="project-card"
+                    data-category="windows"
+                >
+
+                    <img
+                        src="images/project-6.jpg"
+                        alt="Aluminium windows"
+                    >
+
+                    <div class="project-content">
+
+                        <h3>Aluminium Windows</h3>
+
+                        <p>
+                            Aluminium window fabrication and installation.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 7 -->
+
+                <article
+                    class="project-card"
+                    data-category="doors"
+                >
+
+                    <img
+                        src="images/project-7.jpg"
+                        alt="Frameless aluminium door"
+                    >
+
+                    <div class="project-content">
+
+                        <h3>Frameless Door</h3>
+
+                        <p>
+                            Frameless door installation.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 8 -->
+
+                <article
+                    class="project-card"
+                    data-category="gates"
+                >
+
+                    <img
+                        src="images/project-8.jpg"
+                        alt="Gate and metal work"
+                    >
+
+                    <div class="project-content">
+
+                        <h3>Gate & Metal Work</h3>
+
+                        <p>
+                            Gate fabrication and metal work.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 9 -->
+
+                <article
+                    class="project-card"
+                    data-category="gates"
+                >
+
+                    <img
+                        src="images/project-9.jpg"
+                        alt="Metal railings"
+                    >
+
+                    <div class="project-content">
+
+                        <h3>Railings</h3>
+
+                        <p>
+                            Metal railing fabrication and installation.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta-section">
+
+        <div class="cta-container">
+
+            <p class="section-label">START YOUR PROJECT</p>
+
+            <h2>Have a Job in Mind?</h2>
+
+            <p>
+                Tell us what service you need and where the building is located.
+            </p>
+
+            <a href="enquiry.html" class="gold-btn">
+                Request Our Services
             </a>
 
         </div>
 
-    </header>
-
-
-    <!-- ================= PAGE HERO ================= -->
-
-    <main>
-
-        <section class="hero">
-
-            <div class="hero-container">
-
-                <div class="hero-content">
-
-                    <p class="hero-label">
-                        OUR WORK
-                    </p>
-
-                    <h1>
-                        Quality Work.
-                        <span>See It Yourself.</span>
-                    </h1>
-
-                    <p class="hero-description">
-                        Explore some of our aluminium and metal work.
-                        More completed projects can be added as the
-                        gallery grows.
-                    </p>
-
-                    <div class="hero-buttons">
-
-                        <a
-                            href="enquiry.html"
-                            class="gold-btn"
-                        >
-                            Request Our Services
-                        </a>
-
-                        <a
-                            href="services.html"
-                            class="outline-btn"
-                        >
-                            View Services
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <div class="hero-image-container">
-
-                    <img
-                        src="images/hero.jpg"
-                        alt="Aluminium and metal work"
-                        class="hero-image"
-                    >
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= PROJECT GALLERY ================= -->
-
-        <section class="section projects-section">
-
-            <div class="section-container">
-
-                <div class="section-heading">
-
-                    <p class="section-label">
-                        PROJECT GALLERY
-                    </p>
-
-                    <h2>
-                        Featured Work
-                    </h2>
-
-                    <p>
-                        A selection of aluminium and metal work
-                        completed by the team.
-                    </p>
-
-                </div>
-
-
-                <div class="projects-grid">
-
-                    <!-- PROJECT 1 -->
-
-                    <article class="project-card">
-
-                        <img
-                            src="images/sliding-door.jpg"
-                            alt="Sliding aluminium door"
-                        >
-
-                        <div class="project-content">
-
-                            <h3>
-                                Sliding Door
-                            </h3>
-
-                            <p>
-                                Aluminium sliding door installation.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PROJECT 2 -->
-
-                    <article class="project-card">
-
-                        <img
-                            src="./images/arc.jpg"
-                            alt="Aluminium casement window with arc"
-                        >
-
-                        <div class="project-content">
-
-                            <h3>
-                                Casement With Arc
-                            </h3>
-
-                            <p>
-                                Aluminium casement window installation.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PROJECT 3 -->
-
-                    <article class="project-card">
-
-                        <img
-                            src="./images/window.jpg"
-                            alt="Sliding aluminium window with corner fixed angle"
-                        >
-
-                        <div class="project-content">
-
-                            <h3>
-                                Sliding With Corner Fixed Angle
-                            </h3>
-
-                            <p>
-                                Aluminium sliding window installation.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PROJECT 4 -->
-
-                    <article class="project-card">
-
-                        <div class="placeholder-image">
-                            Project Photo
-                        </div>
-
-                        <div class="project-content">
-
-                            <h3>
-                                More Work Coming
-                            </h3>
-
-                            <p>
-                                Add another genuine completed project
-                                photo here.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PROJECT 5 -->
-
-                    <article class="project-card">
-
-                        <div class="placeholder-image">
-                            Project Photo
-                        </div>
-
-                        <div class="project-content">
-
-                            <h3>
-                                More Work Coming
-                            </h3>
-
-                            <p>
-                                Add another genuine completed project
-                                photo here.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- PROJECT 6 -->
-
-                    <article class="project-card">
-
-                        <div class="placeholder-image">
-                            Project Photo
-                        </div>
-
-                        <div class="project-content">
-
-                            <h3>
-                                More Work Coming
-                            </h3>
-
-                            <p>
-                                Add another genuine completed project
-                                photo here.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= CTA ================= -->
-
-        <section class="cta-section">
-
-            <div class="cta-container">
-
-                <p class="section-label">
-                    NEED OUR SERVICES?
-                </p>
-
-                <h2>
-                    Have a Job in Mind?
-                </h2>
-
-                <p>
-                    Tell us what service you need and where
-                    the work is required.
-                </p>
-
-                <a
-                    href="enquiry.html"
-                    class="gold-btn"
-                >
-                    Request Our Services
-                </a>
-
-            </div>
-
-        </section>
-
-    </main>
+    </section>
 
 
     <!-- ================= FOOTER ================= -->
@@ -392,21 +442,17 @@
 
             <div class="footer-brand">
 
-                <div class="footer-logo">
-
-                    <span class="logo-mark">
-                        GT
-                    </span>
+                <a href="index.html" class="logo">
+                    <span class="logo-mark">GT</span>
 
                     <span class="logo-text">
-                        God's Time <strong>Elite</strong>
+                        God's Time <span>Elite</span> Aluminium Works
                     </span>
-
-                </div>
+                </a>
 
                 <p>
-                    Aluminium fabrication, installation, washing,
-                    cleaning, welding, metal work and repairs.
+                    Quality aluminium fabrication, installation,
+                    washing, cleaning, welding and metal work.
                 </p>
 
             </div>
@@ -414,16 +460,13 @@
 
             <div class="footer-links">
 
+                <h3>Quick Links</h3>
+
                 <a href="index.html">Home</a>
-
                 <a href="index.html#about">About</a>
-
                 <a href="services.html">Services</a>
-
                 <a href="gallery.html">Gallery</a>
-
-                <a href="enquiry.html">Project Enquiry</a>
-
+                <a href="enquiry.html">Service Enquiry</a>
                 <a href="contact.html">Contact</a>
 
             </div>
@@ -431,16 +474,14 @@
 
             <div class="footer-contact">
 
-                <h3>
-                    Get In Touch
-                </h3>
+                <h3>Contact</h3>
 
                 <a
                     href="https://wa.me/2348030575897"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    WhatsApp Us
+                    WhatsApp
                 </a>
 
             </div>
@@ -461,9 +502,4 @@
     </footer>
 
 
-    <!-- JavaScript -->
-
     <script src="index.js"></script>
-
-</body>
-</html>
