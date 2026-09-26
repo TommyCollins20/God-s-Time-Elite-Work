@@ -268,27 +268,14 @@ textarea {
     margin: 0 auto;
 }
 
-.section-heading {
-    max-width: 650px;
-    margin-bottom: 55px;
-}
-
+/* Updated Centered Section Heading */
 .section-heading {
     max-width: 700px;
-    margin: 0 auto 55px;
+    margin: 0 auto 55px auto;
     text-align: center;
-}
-
-.section-heading h2 {
-    font-size: clamp(34px, 5vw, 54px);
-    line-height: 1.1;
-    margin-bottom: 18px;
-}
-
-.section-heading > p:last-child {
-    color: var(--brown-light);
-    font-size: 16px;
-    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section-label {
@@ -297,13 +284,22 @@ textarea {
     font-weight: 800;
     letter-spacing: 3px;
     margin-bottom: 18px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: clamp(34px, 5vw, 54px);
+    line-height: 1.1;
+    margin-bottom: 18px;
+    text-align: center;
 }
 
 .section-heading > p:last-child {
     color: var(--gray);
     font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
 }
-
 
 /* ================================
    ABOUT
@@ -490,7 +486,7 @@ textarea {
 
 .project-card img {
     width: 100%;
-    height: 500px;
+    height: 300px;
     object-fit: cover;
     transition: transform 0.5s ease;
 }
@@ -1098,7 +1094,7 @@ p {
 .service-selection-card img {
     display: block;
     width: 100%;
-    height: 180px;
+    height: 500px;
     object-fit: cover;
 }
 
@@ -1176,11 +1172,8 @@ p {
     }
 
     .service-selection-card img {
-    display: block;
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
-}
+        height: 200px;
+    }
 
     .custom-service-option {
         align-items: flex-start;
@@ -1321,11 +1314,19 @@ p {
     margin-bottom: 18px;
 }
 
-/* ================= ENQUIRY HERO CENTER FIX ================= */
+/* ================= ENQUIRY SECTION HEADING ================= */
 
-/* Center the enquiry introduction without changing the layout of other pages. */
+.enquiry-section-heading {
+    max-width: 700px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+/* ================= ENQUIRY HERO CENTER ================= */
+
 body:has(.enquiry-form) .hero-container {
     grid-template-columns: 1fr;
+    justify-items: center;
     text-align: center;
 }
 
@@ -1347,11 +1348,37 @@ body:has(.enquiry-form) .hero-image-container {
     display: none;
 }
 
-.gallery-custom-cta .gold-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: fit-content;
-    margin: 0 auto;
-    text-align: center;
+/* ================= ENQUIRY FORM HEADING ================= */
+
+body:has(.enquiry-form) .section-heading {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 0 55px !important;
+    text-align: center !important;
+}
+
+body:has(.enquiry-form) .section-heading .section-label,
+body:has(.enquiry-form) .section-heading h2,
+body:has(.enquiry-form) .section-heading > p:last-child {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center !important;
+}
+
+.section-heading {
+  max-width: 700px;
+  margin: 0 auto 55px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-heading .section-label,
+.section-heading h2,
+.section-heading p {
+  text-align: center;
+  width: 100%;
 }
